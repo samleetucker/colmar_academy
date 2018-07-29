@@ -3,4 +3,200 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.desktop-logo {
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
+.desktop-logo, .desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 3rem;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+/* Main */
+
+.main {
+  position: relative;
+  top: 3rem;
+}
+
+/* Learn section */
+
+.jumbotron-container {
+  background-color: lightgrey;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.jumbotron-banner {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.jumbotron-banner img {
+  width: 100%;
+}
+
+.banner-text {
+  width: 85%;
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.button {
+  background-color: midnightblue;
+  width: 70%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/* Practice section */
+
+.practice-container {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  padding: 3rem 1rem;
+}
+
+.practice-left-block {
+  width: 60%;
+}
+
+.practice-banner {
+  padding: 2rem 1.5rem;
+}
+
+.practice-banner img {
+  width: 100%;
+}
+
+.quote {
+  font-size: 1rem;
+  color: darkgrey;
+}
+
+.attribution {
+  padding-top: 1.5rem;
+  color: darkgrey;
+}
+
+.practice-small-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 1rem;
+}
+
+.practice-feature {
+  display: flex;
+  padding: 1rem 1rem;
+  background-color: lightgrey;
+}
+
+.practice-feature-image {
+  width: 35%;
+}
+
+.practice-feature-image img {
+  width: 100%;
+}
+
+.practice-feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding-left: 1rem;
+}
+
+.practice-feature-text p {
+  margin-top: .5rem;
+}
+
+.practice-feature-text a {
+  text-decoration: none;
+  color: midnightblue;
 }
