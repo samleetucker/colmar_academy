@@ -21,6 +21,11 @@ h3 {
   padding-bottom: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: midnightblue;
+}
+
 .image-container {
   overflow: hidden;
 }
@@ -90,7 +95,7 @@ nav li {
 /* Learn section */
 
 .jumbotron-container {
-  background-color: lightgrey;
+  background-color: Gainsboro;
   padding: 3rem 1rem;
   display: flex;
   align-items: center;
@@ -126,19 +131,19 @@ nav li {
   width: 100%;
   text-align: center;
   color: white;
-  text-decoration: none;
 }
 
 /* Practice section */
 
-.practice-container {
+.practice-main-container {
   background-color: white;
   display: flex;
   width: 100%;
-  padding: 3rem 1rem;
+  /* padding-top: 2rem; */
+  /* padding: 1rem 1rem; */
 }
 
-.practice-left-block {
+.practice-left-container {
   width: 60%;
 }
 
@@ -152,28 +157,30 @@ nav li {
 
 .quote {
   font-size: 1rem;
-  color: darkgrey;
+  color: DarkSlateGrey;
 }
 
 .attribution {
   padding-top: 1.5rem;
-  color: darkgrey;
+  color: LightSlateGrey;
 }
 
-.practice-small-container {
+.practice-right-container {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 2rem;
   padding-top: 2rem;
-  padding-right: 1rem;
+  /* padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem; */
 }
 
 .practice-feature {
   display: flex;
+  background-color: Gainsboro;
   padding: 1rem 1rem;
-  background-color: lightgrey;
+  border-bottom: DarkSlateGrey 1px solid;
 }
 
 .practice-feature-image {
@@ -196,7 +203,129 @@ nav li {
   margin-top: .5rem;
 }
 
-.practice-feature-text a {
-  text-decoration: none;
-  color: midnightblue;
+/* Courses section */
+
+.course-container {
+  background-color: LightSlateGrey;
+  padding: 2rem 4.5rem;
+  width: 100%;
+}
+
+.course-container h2 {
+  text-align: center;
+  color: white;
+}
+
+.course-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.course-section {
+  display: flex;
+  width: 100%;
+}
+
+.course-feature {
+  width: 33%;
+  margin: 1rem 1rem;
+  border: DarkSlateGrey 1px solid;
+  background-color: white;
+}
+
+.course-image img {
+  width: 100%;
+}
+
+.course-description {
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.course-description p {
+  padding-bottom: .5rem;
+}
+
+/* Thesis section */
+
+.thesis-container {
+  padding-top: 4rem;
+}
+
+.thesis-container h2 {
+  text-align: center;
+}
+
+.thesis-grid {
+  display: flex;
+}
+
+.thesis-left-container {
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.thesis-video video {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.video-text {
+
+}
+
+.thesis-right-container {
+  width: 40%;
+  padding-top: 2rem;
+  padding-right: 0.35rem;
+}
+
+.thesis-feature {
+  display: flex;
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: Gainsboro;
+  border-bottom: DarkSlateGrey 1px solid;
+}
+
+.thesis-feature-image {
+  width: 35%;
+  padding-right: 1rem;
+}
+
+.thesis-feature-text {
+  text-align: left;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-feature-image img {
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 5rem;
+  font-size: 0.75rem;
+  padding-top: 1rem;
+}
+
+.copyright {
+  margin-left: 1.5rem;
+}
+
+.terms li {
+  display: inline-block;
+  margin-right: 1.5rem;
 }
