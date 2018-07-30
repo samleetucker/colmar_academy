@@ -38,6 +38,15 @@ a {
   text-transform: uppercase;
 }
 
+.section-left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
 /* Header */
 
 header {
@@ -103,15 +112,6 @@ nav li {
   width: 100%;
 }
 
-.jumbotron-banner {
-  width: 60%;
-  padding: 2rem 1.5rem;
-}
-
-.jumbotron-banner img {
-  width: 100%;
-}
-
 .banner-text {
   width: 40%
 }
@@ -150,16 +150,8 @@ nav li {
   width: 100%;
 }
 
-.practice-left-container {
-  width: 60%;
-}
-
 .practice-banner {
   padding: 2rem 1.5rem;
-}
-
-.practice-banner img {
-  width: 100%;
 }
 
 .practice-left-text {
@@ -219,7 +211,7 @@ nav li {
   padding: 2rem 4.5rem;
   background-color: LightSlateGrey;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 .course-container h2 {
