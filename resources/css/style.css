@@ -216,14 +216,14 @@ nav li {
 /* Start Learning section */
 
 .course-container {
-  background-color: LightSlateGrey;
   padding: 2rem 4.5rem;
+  background-color: LightSlateGrey;
+  text-align: center;
   width: 100%;
 }
 
 .course-container h2 {
-  text-align: center;
-  color: white;
+  margin-bottom: 1rem;
 }
 
 .course-grid {
@@ -238,25 +238,29 @@ nav li {
 }
 
 .course-feature {
-  width: 33%;
-  margin: 1rem 1rem;
-  border: DarkSlateGrey 1px solid;
+  width: 33.33%;
   background-color: white;
+  margin: 1rem 1rem;
+  border-radius: 3px;
+  border: 1px solid midnightblue;
 }
 
-.course-image img {
+.course-feature img {
   width: 100%;
 }
 
 .course-description {
+  height: 8rem;
   text-align: left;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem .5rem .5rem .5rem;
+}
+
+.course-description h3 {
+  padding-bottom: 0.5rem;
 }
 
 .course-description p {
-  padding-bottom: .5rem;
+  margin-top: 0.5rem;
 }
 
 /* Thesis section */
