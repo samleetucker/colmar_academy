@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -45,11 +45,13 @@ header {
   height: 4rem;
   width: 100%;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
+  border-bottom: midnightblue 1px solid;
 }
 
 .desktop-logo {
@@ -89,14 +91,13 @@ nav li {
 
 .main {
   position: relative;
-  top: 3rem;
+  top: 4rem;
 }
 
 /* Learn section */
 
 .jumbotron-container {
   background-color: Gainsboro;
-  padding: 3rem 1rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -111,10 +112,18 @@ nav li {
   width: 100%;
 }
 
-.banner-text {
+/* .banner-text {
+  width: 40%
+} */
+
+.learn-title {
   width: 85%;
-  margin-bottom: 2.5rem;
-  margin-left: 1.5rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.learn-subtitle {
+  width: 85%;
 }
 
 .button {
@@ -133,14 +142,12 @@ nav li {
   color: white;
 }
 
-/* Practice section */
+/* Keep practicing section */
 
 .practice-main-container {
   background-color: white;
   display: flex;
   width: 100%;
-  /* padding-top: 2rem; */
-  /* padding: 1rem 1rem; */
 }
 
 .practice-left-container {
@@ -153,6 +160,11 @@ nav li {
 
 .practice-banner img {
   width: 100%;
+}
+
+.practice-left-text {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .quote {
@@ -170,10 +182,8 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 2rem;
   padding-top: 2rem;
-  /* padding-bottom: 1rem;
-  padding-top: 1rem;
-  padding-right: 1rem; */
 }
 
 .practice-feature {
@@ -203,7 +213,7 @@ nav li {
   margin-top: .5rem;
 }
 
-/* Courses section */
+/* Start Learning section */
 
 .course-container {
   background-color: LightSlateGrey;
