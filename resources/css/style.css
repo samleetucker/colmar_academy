@@ -1,6 +1,8 @@
 /* Universal Styles */
 
-html {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
