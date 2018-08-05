@@ -99,6 +99,27 @@ nav li {
   padding-left: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 655px) {
+  .desktop-logo, .desktop-nav {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-nav img {
+    height: 2.5rem;
+  }
+}
+
 /* Main */
 
 .main {
@@ -115,7 +136,7 @@ nav li {
   width: 100%;
 }
 
-.jumbotron-text {
+.jumbotron-right {
   width: 40%;
 
 }
@@ -143,6 +164,47 @@ nav li {
   width: 100%;
   text-align: center;
   color: white;
+}
+
+/* media */
+@media only screen and (max-width: 700px) {
+  .jumbotron-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .section-left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .jumbotron-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* .learn-line:nth-child(2n+0) {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-line {
+    margin-bottom: 2rem;
+  }
+
+  .learn-text:nth-child(1n+0) {
+    margin-bottom: 2rem;
+  } */
+
 }
 
 /* Keep practicing section */
@@ -273,6 +335,8 @@ nav li {
 .thesis-container h2 {
   text-align: center;
   padding: 2rem 0;
+  font-weight: bold;
+  color: midnightblue;
 }
 
 .thesis-grid {
@@ -349,10 +413,15 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 5rem;
-  font-size: 0.75rem;
+  height: 4rem;
   padding-top: 1rem;
   border-top: 1px solid Gainsboro;
+  color: midnightblue;
+  font-size: 0.75rem;
+}
+
+.footer-text {
+
 }
 
 .copyright {
