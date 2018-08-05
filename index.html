@@ -12,39 +12,39 @@
 
 <!-- Header -->
 
-    <header>
+    <header role="banner">
       <div class="desktop-logo">
-        <img src="./resources/images/ic-logo.svg" alt="College Logo Icon">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo">
         <span class="caps colmar">Colmar</span><span class="caps academy">Academy</span>
       </div>
 
 <!-- desktop nav bar -->
-      <nav class="desktop-nav">
-        <ul>
-          <li><a href="#">On Campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For Companies</a></li>
-          <li><a href="#">Sign In</a></li>
-          <li class="footer-text"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-          <li class="footer-text"><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-          <li class="footer-text"><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+      <nav class="desktop-nav" role="navigation">
+        <ul role="menubar">
+          <li role="menuitem"><a href="#">On Campus</a></li>
+          <li role="menuitem"><a href="#">Online</a></li>
+          <li role="menuitem"><a href="#">For Companies</a></li>
+          <li role="menuitem"><a href="#">Sign In</a></li>
+          <li role="menuitem" aria-label="link to facebook" class="footer-text"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li role="menuitem" aria-label="link to twitter" class="footer-text"><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li role="menuitem" aria-label="link to instagram" class="footer-text"><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
         </ul>
       </nav>
 
 <!-- mobile nav bar -->
-      <nav class="mobile">
-        <ul class="mobile-nav">
-          <li><img src="./resources/images/ic-logo.svg" alt="logo"></li>
-          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login"></a></li>
+      <nav class="mobile" role="navigation">
+        <ul class="mobile-nav" role="menubar">
+          <li role="menuitem"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></li>
+          <li role="menuitem"><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus"></a></li>
+          <li role="menuitem"><a href="#"><img src="./resources/images/ic-online.svg" alt="online"></a></li>
+          <li role="menuitem"><a href="#"><img src="./resources/images/ic-login.svg" alt="login"></a></li>
       </ul>
     </nav>
-    </header>
+  </header>
 
 <!-- Main container -->
 
-    <div class="main">
+    <main role="main">
 
 <!-- Learn section -->
 
@@ -256,11 +256,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
 <!-- Footer -->
 
-      <footer>
+      <footer role="contentinfo">
         <div class="copyright">
           <span>&copy;2018 Colmar Academy. All rights reserved</span>
         </div>

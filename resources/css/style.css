@@ -122,7 +122,7 @@ nav li {
 
 /* Main */
 
-.main {
+main {
   position: relative;
   top: 4rem;
 }
@@ -251,7 +251,7 @@ nav li {
 
 .speaker {
   background-color: white;
-  border: .25rem solid Gainsboro;
+  border: 1px solid Gainsboro;
 }
 
 .practice-feature-image {
