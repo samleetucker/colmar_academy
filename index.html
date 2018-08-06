@@ -49,16 +49,18 @@
 <!-- Learn section -->
 
       <div class="jumbotron-container">
-        <div class="section-left">
+        <div class="jumbotron-left">
           <div class="banner-image">
             <img src="./resources/images/banner.jpg" alt="Three students studying at a picnic table">
           </div>
         </div>
         <div class="jumbotron-right">
-          <h1>Learn something new everyday</h1>
-          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <div class="button">
-            <a href="#"><span>Start here</span></a>
+          <div class="jumbotron-text">
+            <h1>Learn something new everyday</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <div class="button">
+              <a href="#"><p>Start here</p></a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +68,7 @@
 <!-- Practice section -->
 
       <div class="practice-main-container">
-        <div class="section-left">
+        <div class="practice-left">
           <div class="banner-image">
             <img src="./resources/images/information-main.jpg" alt="A young man reading a book outside">
           </div>
@@ -77,10 +79,13 @@
             <p class="attribution">Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
-        <div class="practice-right-container">
+        <div class="practice-right">
           <div class="practice-feature">
-            <div class="practice-feature-image">
-              <img src="./resources/images/information-orientation.jpg" alt="students walking on a path with long shadows">
+            <div class="practice-feature-image desktop-image">
+              <a href="#"><img src="./resources/images/information-orientation.jpg" alt="students walking on a path with long shadows"></a>
+            </div>
+            <div class="practice-feature-image mobile-image">
+              <a href="#"><img src="./resources/images/information-orientation-mobile.jpg" alt="students walking on a path with long shadows"></a>
             </div>
             <div class="practice-feature-text">
               <h3>Orientation date</h3>
@@ -89,8 +94,11 @@
             </div>
           </div>
           <div class="practice-feature">
-            <div class="practice-feature-image">
-              <img src="./resources/images/information-campus.jpg" alt="students studying at long tables">
+            <div class="practice-feature-image desktop-image">
+              <a href="#"><img src="./resources/images/information-campus.jpg" alt="students studying at long tables"></a>
+            </div>
+            <div class="practice-feature-image mobile-image">
+              <a href="#"><img src="./resources/images/information-campus-mobile.jpg" alt="students studying at long tables"></a>
             </div>
             <div class="practice-feature-text">
               <h3>Our Campus</h3>
@@ -99,8 +107,11 @@
             </div>
           </div>
           <div class="practice-feature speaker">
-            <div class="practice-feature-image">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="a photo of guest speaker oliver sack">
+            <div class="practice-feature-image desktop-image">
+              <a href="#"><img src="./resources/images/information-guest-lecture.jpg" alt="a photo of guest speaker oliver sack"></a>
+            </div>
+            <div class="practice-feature-image mobile-image">
+              <a href="#"><img src="./resources/images/information-guest-lecture-mobile.jpg" alt="a photo of guest speaker oliver sack"></a>
             </div>
             <div class="practice-feature-text">
               <h3>Our guest lecturer</h3>
@@ -129,7 +140,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Software engineering</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
               </a>
@@ -144,7 +157,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Computer art</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                 </div>
               </a>
@@ -159,7 +174,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Design</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>User Experience Design, User Research, Visual Design</p>
                 </div>
               </a>
@@ -179,7 +196,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Data</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>Data Science, Big Data, SQL, Data Visualization</p>
                 </div>
               </a>
@@ -194,7 +213,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Business</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>Product Development, Business Development, Startup</p>
                 </div>
               </a>
@@ -209,7 +230,9 @@
                 </div>
                 <div class="course-description">
                   <h3>Marketing</h3>
-                  <p class="caps">Courses</p>
+                  <div class="courses-header">
+                    <p class="caps">Courses</p>
+                  </div>
                   <p>Web Development, Mobile Development, iOT, APIs</p>
                 </div>
               </a>
@@ -218,12 +241,48 @@
         </div>
       </div>
 
+<!-- MOBILE COURSES -->
+
+      <div class="courses-mobile">
+      <h2>Start learning</h2>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Software engineering</h3>
+         </div>
+       </a>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Computer art</h3>
+         </div>
+       </a>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Design</h3>
+         </div>
+       </a>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Data</h3>
+         </div>
+       </a>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Business</h3>
+         </div>
+       </a>
+       <a href="#">
+         <div class="course-title-mobile">
+           <h3>Marketing</h3>
+         </div>
+       </a>
+     </div>
+
 <!-- Thesis exhibit -->
 
       <div class="thesis-container">
         <h2>Thesis exhibit</h2>
         <div class="thesis-grid">
-          <div class="thesis-left-container">
+          <div class="thesis-left">
             <div class="thesis-video">
               <video src="./resources/videos/thesis.mp4"  muted autoplay loop>Video not supported</video>
             </div>
@@ -232,7 +291,7 @@
               <p class="quote">"Curabitur vitae libero in ipsum portitlor consequat. Aliguam et commodo lectus,nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
           </div>
-          <div class="thesis-right-container">
+          <div class="thesis-right">
             <div class="thesis-feature">
               <div class="thesis-feature-image">
                 <img src="./resources/images/thesis-fisma.jpg" alt="a person sketching a prototype">
@@ -261,16 +320,16 @@
 <!-- Footer -->
 
       <footer role="contentinfo">
-        <div class="copyright">
-          <span>&copy;2018 Colmar Academy. All rights reserved</span>
+        <div class="footer-left">
+          <span class="copyright">&copy;2018 Colmar Academy. All rights reserved</span>
         </div>
-        <div class="terms">
-          <ul>
-            <li class="footer-text"><a href="#">Terms</a></li>
-            <li class="footer-text"><a href="#">Privacy</a></li>
-            <li class="footer-text"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-            <li class="footer-text"><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-            <li class="footer-text"><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+        <div class="footer-right">
+          <ul role="presentation">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
           </ul>
         </div>
       </footer>
