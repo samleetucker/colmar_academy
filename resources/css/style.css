@@ -2,7 +2,7 @@
 
 html, body {
   max-width: 100%;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Lato", serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -11,25 +11,42 @@ html, body {
   box-sizing: inherit;
 }
 
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  color: #2A3140;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-bottom: 1rem;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
-  color: midnightblue;
+  color: #8C2B3D;
+  font-weight: 300;
+}
+
+a:hover {
+  color: #D93240;
+  font-weight: 800;
+}
+
+a:active {
+  color: #6B7363;
 }
 
 .caps {
@@ -48,11 +65,11 @@ a {
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   p {
@@ -60,18 +77,6 @@ a {
   }
 
 }
-
-/* @media only screen and (max-width: 550px) {
-  p {
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  p {
-    font-size: 1rem;
-  }
-} */
 
 /* Header */
 
@@ -86,7 +91,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 1;
-  border-bottom: red 3px solid;
+  border-bottom: #6B7363 2px solid;
 }
 
 .desktop-logo {
@@ -101,7 +106,11 @@ header {
 
 .desktop-nav a {
   text-decoration: none;
-  color: midnightblue;
+  color: #8C2B3D;
+}
+
+.desktop-nav a:hover {
+  color: #D93240;
 }
 
 .desktop-logo, .desktop-nav {
@@ -110,7 +119,13 @@ header {
 }
 
 .colmar {
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
+}
+
+.academy {
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
 }
 
 header nav ul {
@@ -193,7 +208,6 @@ main {
 .jumbotron-text h1 {
   font-size: 2.5rem;
   padding-bottom: 2rem;
-  font-weight: 800;
   width: 75%;
 }
 
@@ -201,11 +215,10 @@ main {
   font-size: 1.75rem;
   width: 85%;
   padding-bottom: 2rem;
-  font-weight: 400;
 }
 
 .button {
-  background-color: midnightblue;
+  background-color: #8C2B3D;
   width: 70%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -218,6 +231,15 @@ main {
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.button:hover {
+  background-color: #D93240;
+  transition-duration: 300ms;
+}
+
+.button:active {
+  background-color: #6B7363;
 }
 
 @media only screen and (max-width: 800px) {
@@ -250,13 +272,11 @@ main {
 
   .jumbotron-text h1 {
     margin-bottom: 1rem;
-    font-weight: 600;
   }
 
   .jumbotron-text h2 {
     margin-bottom: 1.5rem;
     width: 80%;
-    font-weight: 400;
   }
 
   .button {
@@ -292,12 +312,12 @@ main {
 
 .quote {
   font-size: 1rem;
-  color: DarkSlateGrey;
+  color: #2A3140;
 }
 
 .attribution {
   padding-top: 1.5rem;
-  color: LightSlateGrey;
+  color: #6B7363;
 }
 
 .practice-right {
@@ -317,7 +337,7 @@ main {
 
 .speaker {
   background-color: white;
-  border: 1px solid Gainsboro;
+  border: 1px solid #6B7363;
 }
 
 .practice-feature-image {
@@ -326,6 +346,12 @@ main {
 
 .practice-feature-image img {
   width: 100%;
+  border: 1px solid #6B7363;
+}
+
+.practice-feature-image img:hover {
+  opacity: 0.80;
+  border: 2px solid #D9D8C7;
 }
 
 .practice-feature-text {
@@ -405,8 +431,6 @@ main {
 .course-container h2 {
   padding: 1rem 0;
   margin-bottom: 1rem;
-  color: midnightblue;
-  font-weight: bold;
 }
 
 .course-grid {
@@ -425,11 +449,16 @@ main {
   background-color: white;
   margin: 1rem 1rem;
   border-radius: 3px;
-  border: 1px solid midnightblue;
+  border: 1px solid #6B7363;
 }
 
 .course-feature img {
   width: 100%;
+}
+
+.course-feature:hover {
+  opacity: .80;
+  border: 2px solid #D9D8C7;
 }
 
 .course-description {
@@ -444,6 +473,8 @@ main {
 
 .course-description p {
   margin-top: 0.5rem;
+  font-size: .8rem;
+  font-weight: 500;
 }
 
 .courses-mobile {
@@ -452,7 +483,6 @@ main {
 
 @media only screen and (max-width: 1025px) {
   .course-description h3 {
-    font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
   }
@@ -483,8 +513,6 @@ main {
   .courses-mobile h2 {
     padding: 1rem 0;
     margin-bottom: 1rem;
-    color: midnightblue;
-    font-weight: bold;
   }
 
   .course-title-mobile {
@@ -492,32 +520,33 @@ main {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: Gainsboro;
+    background-color: #2A3140;
     display: flex;
     justify-content: center;
-  }
-
-  .course-title-mobile {
     margin-bottom: .5rem;
   }
 
+  .course-title-mobile:hover {
+    background-color: #8C2B3D;
+    transition-duration: 200ms;
+  }
+
+  .course-title-mobile:active {
+    background-color: #D93240;
+  }
+
   .course-title-mobile h3 {
-    font-weight: 400;
-    color: DarkSlateGrey;
+    color: Gainsboro;
     padding: 0;
   }
+
 }
 
 /* Thesis section */
 
-.thesis-container {
-}
-
 .thesis-container h2 {
   text-align: center;
   padding: 2rem 0;
-  font-weight: bold;
-  color: midnightblue;
 }
 
 .thesis-grid {
@@ -535,7 +564,6 @@ main {
 
 .video-text h3 {
   padding-top: 1.5rem;
-  font-weight: 500;
   font-size: 1.5rem;
 }
 
@@ -557,7 +585,7 @@ main {
 
 .whitebg {
   background-color: white;
-  border: 1px solid Gainsboro;
+  border: 1px solid #6B7363;
 }
 
 .thesis-feature-image {
@@ -573,10 +601,6 @@ main {
   justify-content: center;
 }
 
-.thesis-feature-text h3 {
-  font-weight: 600;
-}
-
 .thesis-feature-text p {
   font-size: 1rem;
   margin-top: .5rem;
@@ -584,6 +608,12 @@ main {
 
 .thesis-feature-image img {
   width: 100%;
+  border: 1px solid #6B7363;
+}
+
+.thesis-feature-image img:hover {
+  opacity: 0.80;
+  border: 2px solid #D9D8C7;
 }
 
 /* mobile phone */
@@ -612,7 +642,7 @@ footer {
   justify-content: space-between;
   height: 4rem;
   padding-top: 1rem;
-  border-top: 1px solid Gainsboro;
+  border-top: 1px solid #D9D8C7;
   color: midnightblue;
   font-size: 0.75rem;
 }
