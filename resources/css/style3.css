@@ -2,7 +2,7 @@
 
 html, body {
   max-width: 100%;
-  font-family: "Lato", serif;
+  font-family: "Raleway", serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -12,8 +12,8 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif;
-  color: #2A3140;
+  font-family: "Montserrat", serif;
+  color: black;
 }
 
 h1 {
@@ -31,24 +31,22 @@ h2 {
 h3 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
-  color: #8C2B3D;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  font-size: .8rem;
+  color: #262626;
+  font-weight: 300;
 }
 
 a:hover {
-  color: #D93240;
+  color: #1524D9;
   font-weight: 800;
 }
 
 a:active {
-  color: #6B7363;
+  color: #FF0000;
 }
 
 .caps {
@@ -93,7 +91,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 1;
-  border-bottom: #6B7363 2px solid;
+  border-bottom: #FF0000 2px solid;
 }
 
 .desktop-logo {
@@ -103,16 +101,17 @@ header {
 
 .desktop-nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .desktop-nav a {
-  text-decoration: none;
-  color: #8C2B3D;
+  color: #262626;
+  font-weight: 400;
 }
 
 .desktop-nav a:hover {
-  color: #D93240;
+  color: #1524D9;
+  font-weight: bolder;
 }
 
 .desktop-logo, .desktop-nav {
@@ -121,13 +120,13 @@ header {
 }
 
 .colmar {
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
 }
 
 .academy {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
 
 header nav ul {
@@ -149,10 +148,9 @@ nav li {
 }
 
 .dropdown span {
-  font-family: "Roboto", sans-serif;
   font-size: .8rem;
   padding: .8rem 1rem .8rem .8rem;
-  background-color: #8C2B3D;
+  background-color: #1524D9;
   color: white;
   margin-bottom: .5rem;
 }
@@ -160,15 +158,13 @@ nav li {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 10.125rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 10.5rem;
   z-index: 1;
 }
 
 .dropdown-content p {
-  background-color: #2A3140;
+  background-color: #262626;
   color: white;
-  font-family: "Roboto", sans-serif;
   font-size: .8rem;
   padding-left: 1rem;
   padding-top: 1rem;
@@ -184,7 +180,11 @@ nav li {
 }
 
 .dropdown-content p:hover {
-  background-color: #D93240;
+  background-color: #FF0000;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
 }
 
 /* media queries for header */
@@ -232,7 +232,7 @@ main {
 /* Learn section */
 
 .jumbotron-container {
-  background-color: #F5F5F4;
+  background-color: white;
   display: flex;
   align-items: center;
   width: 100%;
@@ -270,7 +270,7 @@ main {
 }
 
 .button {
-  background-color: #8C2B3D;
+  background-color: #FF0000;
   width: 70%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -286,12 +286,12 @@ main {
 }
 
 .button:hover {
-  background-color: #D93240;
+  background-color: #40E800;
   transition-duration: 300ms;
 }
 
 .button:active {
-  background-color: #6B7363;
+  background-color: #E6E6E6;
 }
 
 /* media queries for learn section */
@@ -337,6 +337,7 @@ main {
     margin-bottom: 2rem;
     width: 70%;
   }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -370,7 +371,7 @@ main {
 
 .attribution {
   padding-top: 1.5rem;
-  color: #6B7363;
+  color: #262626;
   font-size: .8rem;
 }
 
@@ -385,13 +386,13 @@ main {
 
 .practice-feature {
   display: flex;
-  background-color: #F5F5F4;
+  background-color: #E6E6E6;
   padding: 1rem 1rem;
 }
 
 .speaker {
   background-color: white;
-  border: 1px solid #6B7363;
+  border: 1px solid #1524D9;
 }
 
 .practice-feature-image {
@@ -405,7 +406,7 @@ main {
 
 .practice-feature-image img:hover {
   opacity: 0.80;
-  border: 2px solid #D9D8C7;
+  border: 3px solid #40E800;
 }
 
 .practice-feature-text {
@@ -420,6 +421,13 @@ main {
   margin-top: .5rem;
 }
 
+.practice-feature-text a {
+  color: #1524D9;
+}
+
+.practice-feature-text a:hover {
+  color: #FF0000;
+}
 .mobile-image {
   display: none;
 }
@@ -467,17 +475,13 @@ main {
     font-size: 1.5rem;
   }
 
-  .practice-feature-text p {
-
-  }
-
 }
 
 /* courses section */
 
 .course-container {
   padding: 2rem 4.5rem;
-  background-color: #F5F5F4;
+  background-color: #E6E6E6;
   text-align: center;
   max-width: 100%;
 }
@@ -512,7 +516,7 @@ main {
 
 .course-feature:hover {
   opacity: .80;
-  border: 2px solid #D9D8C7;
+  border: 3px solid #40E800;
 }
 
 .course-description {
@@ -573,14 +577,14 @@ main {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #2A3140;
+    background-color: #1524D9;
     display: flex;
     justify-content: center;
     margin-bottom: .5rem;
   }
 
   .course-title-mobile:hover {
-    background-color: #D93240;
+    background-color: #FF0000;
     transition-duration: 200ms;
   }
 
@@ -591,6 +595,7 @@ main {
   .course-title-mobile h3 {
     color: white;
     padding: 0;
+    font-family: "Raleway", sans-serif;
   }
 }
 
@@ -632,12 +637,12 @@ main {
   display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #F5F5F4;
+  background-color: #E6E6E6;
 }
 
 .offset {
   background-color: white;
-  border: 1px solid #6B7363;
+  border: 1px solid #1524D9;
 }
 
 .thesis-feature-image {
@@ -653,6 +658,14 @@ main {
   justify-content: center;
 }
 
+.thesis-feature-text a {
+  color: #1524D9;
+}
+
+.thesis-feature-text a:hover {
+  color: #FF0000;
+}
+
 .thesis-feature-text p {
   font-size: 1rem;
   margin-top: .5rem;
@@ -665,7 +678,7 @@ main {
 
 .thesis-feature-image img:hover {
   opacity: 0.80;
-  border: 2px solid #D9D8C7;
+  border: 3px solid #40E800;
 }
 
 /* media queries for thesis section */
@@ -695,7 +708,7 @@ footer {
   height: 4rem;
   padding-top: 1rem;
   border-top: 1px solid #D9D8C7;
-  color: #2A3140;
+  color: black;
   font-size: 0.75rem;
 }
 
@@ -706,10 +719,6 @@ footer {
 .footer-right li {
   display: inline-block;
   margin-right: 1.5rem;
-}
-
-.style-chooser-mobile {
-  display: none;
 }
 
 /* media queries for footer */
@@ -752,7 +761,7 @@ footer {
   }
 
   .style-chooser-mobile-content p {
-    background-color: #2A3140;
+    background-color: #1524D9;
     color: white;
     font-size: .8rem;
     padding-left: 1rem;
@@ -763,6 +772,6 @@ footer {
   }
 
   .style-chooser-mobile-content p:hover {
-    background-color: #D93240;
+    background-color: #FF0000;
   }
 }

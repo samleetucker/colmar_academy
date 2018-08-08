@@ -2,7 +2,7 @@
 
 html, body {
   max-width: 100%;
-  font-family: "Lato", serif;
+  font-family: "Oswald", serif;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -12,8 +12,8 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif;
-  color: #2A3140;
+  font-family: "Abril Fatface", serif;
+  color: #62BBC1;
 }
 
 h1 {
@@ -36,19 +36,13 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #8C2B3D;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  font-size: .8rem;
+  color: #62BBC1;
+  font-weight: 300;
 }
 
 a:hover {
-  color: #D93240;
+  color: #EC058E;
   font-weight: 800;
-}
-
-a:active {
-  color: #6B7363;
 }
 
 .caps {
@@ -83,7 +77,7 @@ a:active {
 /* Header */
 
 header {
-  background-color: white;
+  background-color: #FFFBFC;
   height: 4rem;
   width: 100%;
   padding-left: 1.5rem;
@@ -93,26 +87,27 @@ header {
   align-items: center;
   position: fixed;
   z-index: 1;
-  border-bottom: #6B7363 2px solid;
+  border-bottom: #EC058E 6px solid;
 }
 
 .desktop-logo {
   height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .desktop-nav {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .desktop-nav a {
   text-decoration: none;
-  color: #8C2B3D;
+  font-size: 1.25rem;
+  color: #62BBC1;
 }
 
 .desktop-nav a:hover {
-  color: #D93240;
+  color: #EC058E;
 }
 
 .desktop-logo, .desktop-nav {
@@ -121,13 +116,13 @@ header {
 }
 
 .colmar {
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
 
 .academy {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
 }
 
 header nav ul {
@@ -149,12 +144,18 @@ nav li {
 }
 
 .dropdown span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
   font-size: .8rem;
-  padding: .8rem 1rem .8rem .8rem;
-  background-color: #8C2B3D;
-  color: white;
+  padding: .8rem .8rem .8rem .8rem;
+  background-color: #FFFBFC;
+  border: 1px solid #62BBC1;
+  color: #62BBC1;
   margin-bottom: .5rem;
+}
+
+.dropdown span:hover {
+  background-color: #EC058E;
+  color: white;
 }
 
 .dropdown-content {
@@ -166,15 +167,15 @@ nav li {
 }
 
 .dropdown-content p {
-  background-color: #2A3140;
+  background-color: #62BBC1;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: .8rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: .8rem;
-  border-top: solid 1px #D9D8C7;
+  border-top: solid 1px #010400;
 }
 
 .dropdown:hover .dropdown-content {
@@ -184,8 +185,9 @@ nav li {
 }
 
 .dropdown-content p:hover {
-  background-color: #D93240;
+  background-color: #EC058E;
 }
+
 
 /* media queries for header */
 
@@ -232,7 +234,7 @@ main {
 /* Learn section */
 
 .jumbotron-container {
-  background-color: #F5F5F4;
+  background-color: #FFFBFC;
   display: flex;
   align-items: center;
   width: 100%;
@@ -270,7 +272,8 @@ main {
 }
 
 .button {
-  background-color: #8C2B3D;
+  background-color: white;
+  border: 2px solid #EC058E;
   width: 70%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -281,17 +284,18 @@ main {
 
 .button a {
   width: 100%;
+  text-transform: uppercase;
   text-align: center;
-  color: white;
+  color: #010400;
 }
 
 .button:hover {
-  background-color: #D93240;
-  transition-duration: 300ms;
+  background-color: #EC058E;
+  transition-duration: 200ms;
 }
 
 .button:active {
-  background-color: #6B7363;
+  background-color: #62BBC1;
 }
 
 /* media queries for learn section */
@@ -366,11 +370,12 @@ main {
 .quote {
   font-size: 1rem;
   color: #2A3140;
+  font-family: "Roboto", sans-serif;
 }
 
 .attribution {
   padding-top: 1.5rem;
-  color: #6B7363;
+  color: #30332E;
   font-size: .8rem;
 }
 
@@ -385,13 +390,9 @@ main {
 
 .practice-feature {
   display: flex;
-  background-color: #F5F5F4;
+  background-color: #62BBC1;
+  color: white;
   padding: 1rem 1rem;
-}
-
-.speaker {
-  background-color: white;
-  border: 1px solid #6B7363;
 }
 
 .practice-feature-image {
@@ -400,12 +401,12 @@ main {
 
 .practice-feature-image img {
   width: 100%;
-  border: 1px solid #6B7363;
+  border: 1px solid #010400;
 }
 
 .practice-feature-image img:hover {
   opacity: 0.80;
-  border: 2px solid #D9D8C7;
+  border: 2px solid #EC058E;
 }
 
 .practice-feature-text {
@@ -418,6 +419,36 @@ main {
 
 .practice-feature-text p {
   margin-top: .5rem;
+}
+
+.practice-feature-text h3 {
+  color: #FFFBFC;
+}
+
+.practice-feature-text a {
+  color: #010400;
+}
+
+.practice-feature-text a:hover {
+  color: #EC058E;
+}
+
+.speaker {
+  background-color: white;
+  border: 2px solid #EC058E;
+  color: #010400;
+}
+
+.speakertext h3 {
+  color: black;
+}
+
+.speakertext a {
+  color: #EC058E;
+}
+
+.speakertext a:hover {
+  color: #62BBC1;
 }
 
 .mobile-image {
@@ -466,18 +497,13 @@ main {
   .practice-feature-text h3 {
     font-size: 1.5rem;
   }
-
-  .practice-feature-text p {
-
-  }
-
 }
 
 /* courses section */
 
 .course-container {
   padding: 2rem 4.5rem;
-  background-color: #F5F5F4;
+  background-color: #62BBC1;
   text-align: center;
   max-width: 100%;
 }
@@ -485,6 +511,7 @@ main {
 .course-container h2 {
   padding: 1rem 0;
   margin-bottom: 1rem;
+  color: #FFFBFC;
 }
 
 .course-grid {
@@ -500,10 +527,11 @@ main {
 
 .course-feature {
   width: 33.33%;
-  background-color: white;
+  background-color: #FFFBFC;
   margin: 1rem 1rem;
-  border-radius: 3px;
-  border: 1px solid #6B7363;
+  border-radius: 10px;
+  border: 2px solid #010400;
+  overflow: hidden;
 }
 
 .course-feature img {
@@ -512,7 +540,7 @@ main {
 
 .course-feature:hover {
   opacity: .80;
-  border: 2px solid #D9D8C7;
+  border: 3px solid #EC058E;
 }
 
 .course-description {
@@ -523,6 +551,11 @@ main {
 
 .course-description h3 {
   padding-bottom: 0.5rem;
+  color: #010400;
+}
+
+.courses-header {
+  color: #010400;
 }
 
 .course-description p {
@@ -573,14 +606,14 @@ main {
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #2A3140;
+    background-color: #62BBC1;
     display: flex;
     justify-content: center;
     margin-bottom: .5rem;
   }
 
   .course-title-mobile:hover {
-    background-color: #D93240;
+    background-color: #EC058E;
     transition-duration: 200ms;
   }
 
@@ -589,8 +622,9 @@ main {
   }
 
   .course-title-mobile h3 {
-    color: white;
+    color: #FFFBFC;
     padding: 0;
+    font-family: "Oswald", sans-serif;
   }
 }
 
@@ -632,12 +666,7 @@ main {
   display: flex;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #F5F5F4;
-}
-
-.offset {
-  background-color: white;
-  border: 1px solid #6B7363;
+  background-color: #62BBC1;
 }
 
 .thesis-feature-image {
@@ -660,12 +689,41 @@ main {
 
 .thesis-feature-image img {
   width: 100%;
-  border: 1px solid #6B7363;
+  border: 1px solid #010400;
 }
 
 .thesis-feature-image img:hover {
   opacity: 0.80;
-  border: 2px solid #D9D8C7;
+  border: 2px solid #EC058E;
+}
+
+.thesis-feature-text h3 {
+  color: #FFFBFC;
+}
+
+.thesis-feature-text a {
+  color: #010400;
+}
+
+.thesis-feature-text a:hover {
+  color: #EC058E;
+}
+
+.offset {
+  background-color: white;
+  border: 2px solid #EC058E;
+}
+
+.offset h3 {
+  color: black;
+}
+
+.offset  a {
+  color: #EC058E;
+}
+
+.offset  a:hover {
+  color: #62BBC1;
 }
 
 /* media queries for thesis section */
@@ -694,8 +752,8 @@ footer {
   justify-content: space-between;
   height: 4rem;
   padding-top: 1rem;
-  border-top: 1px solid #D9D8C7;
-  color: #2A3140;
+  border-top: 1px solid #EC058E;
+  color: #62BBC1;
   font-size: 0.75rem;
 }
 
@@ -706,10 +764,6 @@ footer {
 .footer-right li {
   display: inline-block;
   margin-right: 1.5rem;
-}
-
-.style-chooser-mobile {
-  display: none;
 }
 
 /* media queries for footer */
@@ -752,8 +806,9 @@ footer {
   }
 
   .style-chooser-mobile-content p {
-    background-color: #2A3140;
+    background-color: #62BBC1;
     color: white;
+    font-family: "Oswald", sans-serif;
     font-size: .8rem;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -763,6 +818,6 @@ footer {
   }
 
   .style-chooser-mobile-content p:hover {
-    background-color: #D93240;
+    background-color: #EC058E;
   }
 }
