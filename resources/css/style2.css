@@ -226,7 +226,7 @@ nav li {
 
 /* Main */
 
-main {
+.main {
   position: relative;
   top: 4rem;
 }
@@ -764,6 +764,10 @@ footer {
 .footer-right li {
   display: inline-block;
   margin-right: 1.5rem;
+}
+
+.style-chooser-mobile {
+  display: none;
 }
 
 /* media queries for footer */

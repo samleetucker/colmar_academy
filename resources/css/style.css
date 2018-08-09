@@ -224,7 +224,7 @@ nav li {
 
 /* Main */
 
-main {
+.main {
   position: relative;
   top: 4rem;
 }
